@@ -19,7 +19,7 @@ const SongCard = ( props, song, isPlaying, activeSong, i, data ) => {
         dispatch(setActiveSong(props, song, data, i ));
         dispatch(playPause(true));
     };
-    // console.log(data);
+    console.log();
     return (
         <div className="flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer">
             <div className="relative w-full h-56 group">
