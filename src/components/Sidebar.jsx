@@ -5,7 +5,7 @@ import { links } from '../assets/constants';
 import { RiCloseLine } from 'react-icons/ri';
 import { HiOutlineMenu } from 'react-icons/hi';
 
-const NavLinks = (handleClick) => (
+const NavLinks = ({ handleClick }) => (
     <div className="mt-10">
         {links.map((item) => (
             <NavLink
@@ -30,13 +30,20 @@ const Sidebar = () => {
                     alt={logo}
                     className="w-full h-14 object-contain"
                 />
+                {/* <h2 className='text-white flex justify-center mt-5'>Welcome</h2> */}
                 <NavLinks />
             </div>
             <div className="absolute md-hidden block top-6 right-3">
                 {mobileMenuOpen ? (
-                    <RiCloseLine className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(false)}/>
+                    <RiCloseLine
+                        className="w-6 h-6 text-white mr-2"
+                        onClick={() => setMobileMenuOpen(false)}
+                    />
                 ) : (
-                    <HiOutlineMenu className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(true)}/>
+                    <HiOutlineMenu
+                        className="w-6 h-6 text-white mr-2"
+                        onClick={() => setMobileMenuOpen(true)}
+                    />
                 )}
             </div>
             <div
