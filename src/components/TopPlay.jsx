@@ -17,7 +17,7 @@ const TopChartCard = ({
     handlePauseClick,
     handlePlayClick,
 }) => (
-    <div className="w-full flex flex-row items-center hover:bg-[#4c426e] py-2 p-4 rounded-lg cursor-pointer mb-2">
+    <div className="w-full flex flex-row items-center hover:bg-[#2b64a5] py-2 p-4 rounded-lg cursor-pointer mb-2">
         <h3 className="font-bold text-base text-white mr-3">{i + 1}.</h3>
         <div className="flex-1 flex flex-row justify-between items-center">
             <img
@@ -78,7 +78,7 @@ const TopPlay = () => {
                         Top Charts
                     </h2>
                     <Link to="/top-charts">
-                        <p className="text-gray-300 text-base cursor-pointer">
+                        <p className="text-gray-300 text-base cursor-pointer hover:text-[#296dbb]">
                             See More
                         </p>
                     </Link>
@@ -103,7 +103,7 @@ const TopPlay = () => {
                         Top Artist
                     </h2>
                     <Link to="/top-artists">
-                        <p className="text-gray-300 text-base cursor-pointer">
+                        <p className="text-gray-300 text-base cursor-pointer hover:text-[#296dbb]">
                             See More
                         </p>
                     </Link>
@@ -121,13 +121,11 @@ const TopPlay = () => {
                             key={song.key}
                             style={{ width: '25%', height: 'auto' }}
                             className="shadow-lg rounded-full animate-slideright">
-                            <Link to={`/artists/${song?.artists[0].adamid}`}>
-                                <img
-                                    src={song?.images.background}
-                                    alt="name"
-                                    className="rounded-full w-full object-cover"
-                                />
-                            </Link>
+                            <img
+                                src={song?.images.background}
+                                alt="name"
+                                className="rounded-full w-full object-cover"
+                            />
                         </SwiperSlide>
                     ))}
                 </Swiper>

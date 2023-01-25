@@ -7,44 +7,24 @@ button {
     outline: none;
 }
 
-.LoginPage {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-    background-image: url(https://images5.alphacoders.com/426/426764.png);
-    background-repeat: no-repeat;
-}
-
 .form {
     display: block;
     position: absolute;
 }
 
-.form::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: 1;
-    background-color: rgb(255, 254, 254);
-    border-radius: 5px;
-}
+
 
 .form .form-inner {
     position: relative;
     display: block;
-    background-color: rgb(238, 236, 236);
+    background-color: rgb(255, 255, 255);
     padding: 30px;
     z-index: 2;
+    border-radius: 25px;
 }
 
 .form .form-inner .h2 {
-    color: #666 ;
+    color: rgb(99, 96, 96) ;
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 30px;

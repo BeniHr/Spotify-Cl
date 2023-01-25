@@ -21,6 +21,7 @@ const Searchbar = () => {
         <div className="flex flex-row justify-start items-center">
             <FiSearch className="w-5 h-5 ml-4" />
             <input
+                maxLength={20}
                 name="search-field"
                 autoComplete="off"
                 id="search-field"
@@ -28,7 +29,7 @@ const Searchbar = () => {
                 type="Search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="flex-1 bg-transparent border-none outline-none placeholder-gray-500 text-base text-white p-4"
+                className="flex-1 bg-transparent border-none outline-none placeholder-gray-500 text-base text-white p-4 bg-black bg-opacity-20"
             />
         </div>
     </form>
