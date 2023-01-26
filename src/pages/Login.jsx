@@ -36,7 +36,7 @@ function Login({ setAuth }) {
     };
 
     return (
-        <div className="h-screen flex items-center justify-center bg-no-repeat  bg-gradient-to-br from-black to-[#270303]">
+        <div className="h-screen flex items-center justify-center bg-no-repeat  bg-gradient-to-br from-black to-[#1f0202]">
             <SpotifyBanner />
             {user.email !== '' ? (
                 // <Link to='/src/pages/mainPage/MainPage.js'>asdasda</Link>
