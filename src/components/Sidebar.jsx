@@ -61,7 +61,7 @@ const Sidebar = () => {
                     className="w-full h-14 object-contain"
                 />
                 <h2 className="text-white flex justify-center mt-5">
-                    Glad you're back Beni!
+                Glad you're back {adminUser.name}!
                 </h2>
                 <NavLinks handleClick={() => setMobileMenuOpen(false)} />
             </div>
