@@ -25,8 +25,8 @@ export const links = [
 ];
 
  const adminUser = {
-  name: 'Beni',
-  email: 'hreniucbenii@gmail.com',
+  name: 'admin',
+  email: 'admin123@gmail.com',
   password: 'admin123',
 };
 
