@@ -1,3 +1,5 @@
+https://spotify-personalproject.netlify.app
+
 The data to login into the app:
 Username: 'admin'
 Email: 'admin123@gmail.com'
